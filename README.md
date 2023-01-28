@@ -14,6 +14,7 @@ The method returns an empty string `""` if it can't find the start or end tag.
 
 There are several errors in the code that you will fix in this lab.
 
+
 ## Task #0
 
 Run the Junit `SubstringExtractorTest`.
@@ -84,7 +85,7 @@ Let's look at the string passed into `extractH1Content`.
 
 Notice there are two end tags `</h1>`.  The method found the index 15 of the start tag `<h1>`,
 but unfortunately it found the index 6 of the first end tag `</h1>`.  We need the method
-to look for the end tag that is located **after** the start tag.
+to look for the end tag that is located *after* the start tag.
 
 Recall the `indexOf` method has two versions:
 
@@ -95,8 +96,13 @@ The second one lets you pass a second parameter that is  the index to start look
 passed as the first parameter.
 
 1. Edit the `extractH1Content` method to fix this issue.
-   The method should look for the end tag located **after** the start tag.
+   The method should look for the end tag located *after* the start tag.
 2. Run the Junit `SubstringExtractorTest` and confirm the `test0`, `test1`, `test2`, and `test3` methods pass.
+
+NOTE: Another option would be to throw an exception when the string contains invalid HTML, as
+is the case with `"<body></h1><h1>Howdy</h1></body>"`. However, for this lab task,
+we will simply look for the end tag after the start tag's position
+to practice calling the `indexOf` method with two parameters.
 
 ## Task #4
 
