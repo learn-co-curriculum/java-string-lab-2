@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.flatironschool</groupId>
-    <artifactId>java-lab-maven</artifactId>
+    <artifactId>java-string-lab-2</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
